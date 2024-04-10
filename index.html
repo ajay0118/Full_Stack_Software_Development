@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Grading System done by 2023179018</h1>
+    <div class="form-container">
+      <form id="add-student-form">
+        <table>
+          <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="rollNo">Roll Number</label></td>
+            <td><input type="number" id="rollNo" name="rollNo" required /></td>
+          </tr>
+          <tr>
+            <td><label for="subject1">Advanced Applied Mathematics</label></td>
+            <td>
+              <input type="number" id="subject1" name="subject1" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="subject2">Research Methodology</label></td>
+            <td>
+              <input type="number" id="subject2" name="subject2" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="subject3">Data Structure</label>
+            </td>
+            <td>
+              <input type="number" id="subject3" name="subject3" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="subject4">Database Technologies</label>
+            </td>
+            <td>
+              <input type="number" id="subject4" name="subject4" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="subject5">Java Programming</label></td>
+            <td>
+              <input type="number" id="subject5" name="subject5" required />
+            </td>
+          </tr>
+        </table>
+        <div class="buttons">
+          <button type="submit">Add Student</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="average-display"></div>
+    <table id="students-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Advanced Applied Mathematics</th>
+          <th>Research Methodology</th>
+          <th>Data Structures</th>
+          <th>Database Technologies</th>
+          <th>Java Programming</th>
+          <th>Total</th>
+          <th>Average</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
